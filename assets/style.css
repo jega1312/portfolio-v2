@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "Oooh Baby";
+  src: url("../assets/fonts/OoohBaby-Regular.eot");
+  src: url("../assets/fonts/OoohBaby-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/OoohBaby-Regular.woff2") format("woff2"),
+    url("../assets/fonts/OoohBaby-Regular.woff") format("woff"),
+    url("../assets/fonts/OoohBaby-Regular.ttf") format("truetype"),
+    url("../assets/fonts/OoohBaby-Regular.svg#OoohBaby-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-oh-baby {
+  font-family: "Oooh Baby", cursive;
+}
+
+@font-face {
+  font-family: "Satisfy";
+  src: url("../assets/fonts/Satisfy-Regular.eot");
+  src: url("../assets/fonts/Satisfy-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/Satisfy-Regular.woff2") format("woff2"),
+    url("../assets/fonts/Satisfy-Regular.woff") format("woff"),
+    url("../assets/fonts/Satisfy-Regular.ttf") format("truetype"),
+    url("../assets/fonts/Satisfy-Regular.svg#Satisfy-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-satisfy {
+  font-family: "Satisfy", cursive;
+}
+
+.bg-default {
+  background-color: #004aad !important;
+}
+
+.hero-section {
+  background-color: #b7d1ff !important;
+}
+
+.badge {
+  font-size: 14px !important;
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler:focus-visible {
+  border-color: none !important;
+  box-shadow: 0 0 0 0.2rem rgb(255, 255, 255) !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23ffffff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+.skills-logo {
+  height: 120px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.card-move:hover {
+  cursor: pointer;
+  bottom: 0.5rem;
+}
+
+.f-12 {
+  font-size: 12px !important;
+}
+
+.project-tools {
+  height: 24px;
+  width: auto !important;
+  object-fit: contain;
+}
+
+.card-img-fixed{
+  height: 180px;
+  object-fit: fill;
+}
+
+.owl-nav{
+  position: relative;
+  top: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
+  color: #fff !important;
+  font-size: 1.25rem !important;
+}
+
+
+@media (min-width: 320px) {
+  .project-card{
+    width: 16rem !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .project-card{
+    width: 24rem !important;
+  }
+}
