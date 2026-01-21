@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -32,9 +32,6 @@
       referrerpolicy="no-referrer"
     />
 
-    <!-- AOS CDN Link -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
     <!-- Animate.css CDN Link -->
     <link
       rel="stylesheet"
@@ -60,7 +57,9 @@
 
   <body>
     <!-- Navbar Section Starts -->
-    <nav class="navbar navbar-expand-lg bg-default py-4 px-3 px-lg-5">
+    <nav
+      class="navbar navbar-expand-lg navbar-fixed-top bg-default py-4 px-3 px-lg-5"
+    >
       <div class="container-fluid">
         <a class="navbar-brand fw-bold fs-3 text-white font-satisfy" href="#"
           >Jegathiswaran Thiaghu</a
@@ -77,34 +76,37 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto align-items-lg-center">
+          <ul class="navbar-nav ms-auto align-items-lg-center font-oswald">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#about"
+              <a
+                class="nav-link active text-white"
+                aria-current="page"
+                href="#about"
                 >About</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
+              <a class="nav-link text-white" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link text-white" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Experience</a>
+              <a class="nav-link text-white" href="#experience">Experience</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Education</a>
+              <a class="nav-link text-white" href="#education">Education</a>
             </li>
 
             <!-- Contact Us Button -->
             <li class="nav-item">
-              <button
+              <a
                 type="button"
-                href="#"
+                href="#contact"
                 class="btn btn-primary border-2 border-black fw-medium rounded-1 mx-lg-2 mt-2 mt-lg-0"
               >
                 Contact Us
-              </button>
+              </a>
             </li>
           </ul>
         </div>
@@ -112,575 +114,48 @@
     </nav>
     <!-- Navbar Section Ends -->
 
-    <!-- Hero Section Starts -->
-    <section class="hero-section container-fluid py-5" id="about">
-      <div
-        class="container d-flex flex-column-reverse flex-lg-row justify-content-between align-items-center"
+    <div class="position-relative">
+      <!-- Hero Section Starts -->
+      <section
+        class="hero-section container-fluid py-5 overflow-hidden"
+        id="about"
       >
-        <!-- Hero Content Mobile -->
         <div
-          class="w-1/2 text-center text-lg-start container d-lg-none mb-5 mt-5 mt-lg-0"
-          data-aos="fade-up"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-out"
-          data-aos-duration="1000"
+          class="container d-flex flex-column-reverse flex-lg-row justify-content-between align-items-center"
         >
-          <h1 class="display-5 fw-semibold mb-3 text-dark font-satisfy">
-            Hi, I'm Jegathiswaran
-          </h1>
-          <span class="badge bg-default mb-3 p-2">Front-End Developer</span>
-          <p class="lead mb-4 text-dark">
-            A passionate and dedicated software developer with expertise in
-            creating dynamic and user-friendly web applications.
-          </p>
-
-          <div class="d-flex flex-column">
-            <div
-              class="btn-group align-self-center align-self-lg-start"
-              role="group"
-              aria-label="Social Links"
-            >
-              <a
-                class="btn btn-info text-decoration-none fw-semibold"
-                href="https://www.linkedin.com/in/jegathiswaran-thiaghu/"
-                target="_blank"
-                rel="noopener"
-                aria-label="Go to LinkedIn"
-              >
-                <i class="fab fa-linkedin"></i>
-                LinkedIn
-              </a>
-
-              <a
-                class="btn btn-info text-decoration-none fw-semibold"
-                href="https://github.com/jega1312/"
-                target="_blank"
-                rel="noopener"
-                aria-label="Go to GitHub"
-              >
-                <i class="fab fa-github"></i>
-                GitHub
-              </a>
-            </div>
-          </div>
-
-          <a
-            href="#"
-            class="btn btn-primary text-white fw-medium rounded-1 mt-3"
-            role="button"
-          >
-            <i class="fas fa-download"></i> Download Resume</a
-          >
-        </div>
-
-        <!-- Hero Content Desktop -->
-        <div
-          class="w-1/2 text-center text-lg-start container d-none d-lg-block mb-4 mt-4 mt-lg-0"
-          data-aos="fade-right"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-out"
-          data-aos-duration="1000"
-        >
-          <h1 class="display-5 fw-semibold mb-3 text-dark font-satisfy">
-            Hi, I'm Jegathiswaran
-          </h1>
-          <span class="badge bg-default mb-3 p-2">Front-End Developer</span>
-          <p class="lead mb-4 text-dark">
-            A passionate and dedicated software developer with expertise in
-            creating dynamic and user-friendly web applications.
-          </p>
-
-          <div class="d-flex flex-column">
-            <div
-              class="btn-group align-self-center align-self-lg-start"
-              role="group"
-              aria-label="Social Links"
-            >
-              <a
-                class="btn btn-info btn-sm text-decoration-none fw-semibold"
-                href="https://www.linkedin.com/in/jegathiswaran-thiaghu/"
-                target="_blank"
-                rel="noopener"
-                aria-label="Go to LinkedIn"
-              >
-                <i class="fab fa-linkedin"></i>
-                LinkedIn
-              </a>
-
-              <a
-                class="btn btn-info btn-sm text-decoration-none fw-semibold"
-                href="https://github.com/jega1312/"
-                target="_blank"
-                rel="noopener"
-                aria-label="Go to GitHub"
-              >
-                <i class="fab fa-github"></i>
-                GitHub
-              </a>
-            </div>
-          </div>
-
-          <a
-            href="#"
-            class="btn btn-primary text-white fw-medium rounded-1 mt-3"
-            role="button"
-          >
-            <i class="fas fa-download"></i> Download Resume</a
-          >
-        </div>
-
-        <!-- Profile Image Mobile -->
-        <div
-          class="w-1/2 mt-lg-0 container d-lg-none"
-          data-aos="fade-up"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-out"
-          data-aos-duration="1000"
-        >
-          <img
-            src="assets/images/profile.jpg"
-            alt="Profile Image"
-            class="img rounded-circle shadow-lg w-75 mx-auto d-block"
-          />
-        </div>
-
-        <!-- Profile Image Desktop -->
-        <div
-          class="w-1/2 mt-lg-0 container d-none d-lg-block"
-          data-aos="fade-left"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-out"
-          data-aos-duration="1000"
-        >
-          <img
-            src="assets/images/profile.jpg"
-            alt="Profile Image"
-            class="img rounded-circle shadow-lg w-75 mx-auto d-block"
-          />
-        </div>
-      </div>
-    </section>
-    <!-- Hero Section Ends -->
-
-    <!-- Skills Section Starts -->
-    <section
-      class="bg-white container-fluid py-5 flex justify-content-center align-items-center"
-      id="skills"
-    >
-      <!-- Section Header -->
-      <h1 class="text-center font-satisfy my-4 display-4">Skills</h1>
-
-      <!-- Skills Container Starts -->
-      <div class="container-fluid px-5">
-        <!-- Tabs Navigation Starts -->
-        <ul class="nav nav-underline justify-content-center" role="tablist">
-          <li class="nav-item">
-            <a
-              class="nav-link active"
-              data-bs-toggle="tab"
-              href="#nav-frontend"
-              role="tab"
-              aria-selected="true"
-            >
-              Frontend
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              data-bs-toggle="tab"
-              href="#nav-framework"
-              role="tab"
-            >
-              Frameworks
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              data-bs-toggle="tab"
-              href="#nav-library"
-              role="tab"
-            >
-              Library
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" href="#nav-cms" role="tab">
-              CMS
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              data-bs-toggle="tab"
-              href="#nav-tools"
-              role="tab"
-            >
-              Tools
-            </a>
-          </li>
-        </ul>
-        <!-- Tabs Navigation Ends -->
-
-        <!-- Tabs Start -->
-        <div class="tab-content" id="nav-tabContent">
-          <!-- Frontend Tab Content Starts -->
+          <!-- Hero Content Mobile -->
           <div
-            class="tab-pane fade show active py-5"
-            id="nav-frontend"
-            role="tabpanel"
-            aria-labelledby="nav-frontend-tab"
+            class="w-1/2 text-center text-lg-start container d-lg-none mb-5 mt-5 mt-lg-0 animate__animated animate__fadeInUp"
           >
-            <div
-              class="row g-4 d-flex justify-content-center align-items-center"
+            <h1 class="display-5 fw-semibold mb-3 text-dark font-satisfy">
+              Hi, I'm Jegathiswaran
+            </h1>
+            <span class="badge bg-default mb-3 p-2 font-oswald"
+              >Front-End Developer</span
             >
-              <!-- HTML Card -->
+            <p class="lead mb-4 text-dark font-monserrat">
+              An aspiring and motivated front-end web developer passionate about
+              building user-friendly websites and solving real-world problems.
+            </p>
+            <div class="d-flex flex-column">
               <div
-                class="col-12 col-sm-7 col-md-4 col-lg-3 col-xxl-2 animate__animated animate__fadeInUp"
+                class="btn-group align-self-center align-self-lg-start"
+                role="group"
+                aria-label="Social Links"
               >
-                <div
-                  class="card card-move bg-default p-4 rounded-4 border-3 border-black text-center shadow-lg h-100 mx-auto"
-                >
-                  <div class="card-body">
-                    <h5
-                      class="card-title text-center text-white fw-semibold font-oh-baby"
-                    >
-                      HTML
-                    </h5>
-                  </div>
-                  <img
-                    src="assets/images/html.png"
-                    class="card-img-bottom mx-auto skills-logo"
-                    alt="html logo"
-                  />
-                </div>
-              </div>
-
-              <!-- CSS Card -->
-              <div
-                class="col-12 col-sm-7 col-md-4 col-lg-3 col-xxl-2 animate__animated animate__fadeInUp"
-              >
-                <div
-                  class="card card-move bg-default p-4 rounded-4 border-3 border-black text-center shadow-lg h-100 mx-auto"
-                >
-                  <div class="card-body">
-                    <h5
-                      class="card-title text-center text-white fw-semibold font-oh-baby"
-                    >
-                      CSS
-                    </h5>
-                  </div>
-                  <img
-                    src="assets/images/css.png"
-                    class="card-img-bottom mx-auto skills-logo"
-                    alt="css logo"
-                  />
-                </div>
-              </div>
-
-              <!-- JS Card -->
-              <div
-                class="col-12 col-sm-7 col-md-4 col-lg-3 col-xxl-2 animate__animated animate__fadeInUp"
-              >
-                <div
-                  class="card card-move bg-default p-4 rounded-4 border-3 border-black text-center shadow-lg h-100 mx-auto position-relative"
-                >
-                  <div class="card-body">
-                    <h5
-                      class="card-title text-center text-white fw-semibold font-oh-baby"
-                    >
-                      JavaScript
-                    </h5>
-                  </div>
-                  <img
-                    src="assets/images/js.png"
-                    class="card-img-bottom mx-auto skills-logo"
-                    alt="js logo"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Frontend Tab Content Ends -->
-
-          <!-- Frameworks Tab Content Starts -->
-          <div
-            class="tab-pane fade py-5"
-            id="nav-framework"
-            role="tabpanel"
-            aria-labelledby="nav-framework-tab"
-          >
-            <div
-              class="row g-4 d-flex justify-content-center align-items-center"
-            >
-              <!-- Tailwind CSS Card -->
-              <div
-                class="col-12 col-sm-7 col-md-4 col-lg-3 col-xxl-2 animate__animated animate__fadeInUp"
-              >
-                <div
-                  class="card card-move bg-default p-4 rounded-4 border-3 border-black text-center shadow-lg h-100 mx-auto"
-                >
-                  <div class="card-body">
-                    <h5
-                      class="card-title text-center text-white fw-semibold text-nowrap font-oh-baby"
-                    >
-                      Tailwind CSS
-                    </h5>
-                  </div>
-                  <img
-                    src="assets/images/tailwind.png"
-                    class="card-img-bottom mx-auto skills-logo"
-                    alt="tailwind logo"
-                  />
-                </div>
-              </div>
-
-              <!-- Bootstrap Card -->
-              <div
-                class="col-12 col-sm-7 col-md-4 col-lg-3 col-xxl-2 animate__animated animate__fadeInUp"
-              >
-                <div
-                  class="card card-move bg-default p-4 rounded-4 border-3 border-black text-center shadow-lg h-100 mx-auto"
-                >
-                  <div class="card-body">
-                    <h5
-                      class="card-title text-center text-white fw-semibold text-nowrap font-oh-baby"
-                    >
-                      Bootstrap
-                    </h5>
-                  </div>
-                  <img
-                    src="assets/images/bootstrap.svg"
-                    class="card-img-bottom mx-auto skills-logo"
-                    alt="bootstrap logo"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Frameworks Tab Content Ends -->
-
-          <!-- Library Tab Content Starts -->
-          <div
-            class="tab-pane fade py-5"
-            id="nav-library"
-            role="tabpanel"
-            aria-labelledby="nav-library-tab"
-          >
-            <div
-              class="row g-4 d-flex justify-content-center align-items-center"
-            >
-              <!-- React Card -->
-              <div
-                class="col-12 col-sm-7 col-md-4 col-lg-3 col-xxl-2 animate__animated animate__fadeInUp"
-              >
-                <div
-                  class="card card-move bg-default p-4 rounded-4 border-3 border-black text-center shadow-lg h-100 mx-auto"
-                >
-                  <div class="card-body">
-                    <h5
-                      class="card-title text-center text-white fw-semibold font-oh-baby"
-                    >
-                      React.js
-                    </h5>
-                  </div>
-                  <img
-                    src="assets/images/react.png"
-                    class="card-img-bottom mx-auto skills-logo"
-                    alt="react logo"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Library Tab Content Ends -->
-
-          <!-- CMS Tab Content Starts -->
-          <div
-            class="tab-pane fade py-5"
-            id="nav-cms"
-            role="tabpanel"
-            aria-labelledby="nav-cms-tab"
-          >
-            <div
-              class="row g-4 d-flex justify-content-center align-items-center"
-            >
-              <div
-                class="col-12 col-sm-7 col-md-4 col-lg-3 col-xxl-2 animate__animated animate__fadeInUp"
-              >
-                <div
-                  class="card card-move bg-default p-4 rounded-4 border-3 border-black text-center shadow-lg h-100 mx-auto"
-                >
-                  <div class="card-body">
-                    <h5
-                      class="card-title text-center text-white text-nowrap fw-semibold font-oh-baby"
-                    >
-                      WordPress
-                    </h5>
-                  </div>
-                  <img
-                    src="assets/images/wordpress.png"
-                    class="card-img-bottom mx-auto skills-logo"
-                    alt="wordpress logo"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- CMS Tab Content Ends -->
-
-          <!-- Tools Tab Content Starts -->
-          <div
-            class="tab-pane fade py-5"
-            id="nav-tools"
-            role="tabpanel"
-            aria-labelledby="nav-tools-tab"
-          >
-            <div
-              class="row g-4 d-flex justify-content-center align-items-center"
-            >
-              <!-- Git Card -->
-              <div
-                class="col-12 col-sm-7 col-md-4 col-lg-3 col-xxl-2 animate__animated animate__fadeInUp"
-              >
-                <div
-                  class="card card-move bg-default p-4 rounded-4 border-3 border-black text-center shadow-lg h-100 mx-auto"
-                >
-                  <div class="card-body">
-                    <h5
-                      class="card-title text-center text-white text-nowrap fw-semibold font-oh-baby"
-                    >
-                      Git
-                    </h5>
-                  </div>
-                  <img
-                    src="assets/images/git.svg"
-                    class="card-img-bottom mx-auto skills-logo"
-                    alt="git logo"
-                  />
-                </div>
-              </div>
-
-              <!-- GitHub Card -->
-              <div
-                class="col-12 col-sm-7 col-md-4 col-lg-3 col-xxl-2 animate__animated animate__fadeInUp"
-              >
-                <div
-                  class="card card-move bg-default p-4 rounded-4 border-3 border-black text-center shadow-lg h-100 mx-auto"
-                >
-                  <div class="card-body">
-                    <h5
-                      class="card-title text-center text-white fw-semibold font-oh-baby"
-                    >
-                      GitHub
-                    </h5>
-                  </div>
-                  <img
-                    src="assets/images/github.png"
-                    class="card-img-bottom mx-auto skills-logo"
-                    alt="github logo"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Tools Tab Content Ends -->
-        </div>
-        <!-- Tabs End -->
-      </div>
-      <!-- Skills Container Ends -->
-    </section>
-    <!-- Skills Section Ends -->
-
-    <!-- Projects Section Starts -->
-    <section
-      class="bg-default container-fluid py-5 flex justify-content-center align-items-center"
-    >
-      <!-- Section Header -->
-      <h1 class="text-center font-satisfy my-4 display-4 text-white">
-        Projects
-      </h1>
-
-      <div class="container-fluid px-3">
-       <div class="carousel-container position-relative">
-        <div
-          id="slider-1"
-          class="owl-carousel"
-        >
-          <div class="item d-flex justify-content-center">
-            <!-- Project 1 Card Starts -->
-            <div class="card border-2 border-black project-card h-100">
-              <img
-                src="assets/images/glucopredictor.png"
-                class="card-img-top card-img-fixed"
-                alt="GlucoPredictor"
-              />
-              <div class="card-body text-center border-top border-black">
-                <h5 class="card-title">GlucoPredictor</h5>
-                <h6 class="card-subtitle f-12">
-                  Web-based Diabetes Risk Assessment & Data Entry System
-                </h6>
-                <span class="badge bg-default my-3 rounded-pill py-2 px-3"
-                  >Final Year Project</span
-                >
-                <p class="card-text f-12">
-                  Rule-based and AI-driven personalized health tips generated
-                  using a trained XGBoost model based on user risk assessment.
-                </p>
-
-                <div
-                  class="d-flex flex-wrap flex-row justify-content-center gap-2 my-3"
-                >
-                  <!-- HTML Logo -->
-                  <img
-                    src="assets/images/html.png"
-                    alt="html"
-                    class="project-tools"
-                  />
-
-                  <!-- CSS Logo -->
-                  <img
-                    src="assets/images/css.png"
-                    alt="css"
-                    class="project-tools"
-                  />
-
-                  <!-- JS Logo -->
-                  <img
-                    src="assets/images/js.png"
-                    alt="js"
-                    class="project-tools"
-                  />
-
-                  <!-- Bootstrap Logo -->
-                  <img
-                    src="assets/images/bootstrap.svg"
-                    alt="bootstrap"
-                    class="project-tools"
-                  />
-
-                  <!-- PHP Logo -->
-                  <img
-                    src="assets/images/php.png"
-                    alt="php"
-                    class="project-tools"
-                  />
-
-                  <!-- Python Logo -->
-                  <img
-                    src="assets/images/python.png"
-                    alt="python"
-                    class="project-tools"
-                  />
-                </div>
                 <a
-                  class="btn btn-primary btn-sm text-decoration-none fw-semibold"
-                  href="https://github.com/jega1312/glucopredictor"
+                  class="btn btn-info border-2 border-black text-decoration-none fw-semibold font-oswald"
+                  href="https://www.linkedin.com/in/jegathiswaran-thiaghu/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Go to LinkedIn"
+                >
+                  <i class="fab fa-linkedin"></i>
+                  LinkedIn
+                </a>
+                <a
+                  class="btn btn-info border-2 border-black text-decoration-none fw-semibold font-oswald"
+                  href="https://github.com/jega1312/"
                   target="_blank"
                   rel="noopener"
                   aria-label="Go to GitHub"
@@ -690,91 +165,936 @@
                 </a>
               </div>
             </div>
-            <!-- Project 1 Card Ends -->
+            <a
+              href="assets/documents/JEGATHISWARAN-RESUME.pdf"
+              class="btn btn-primary text-white border-2 border-black fw-medium rounded-1 mt-3 px-4"
+              role="button"
+              download="JEGATHISWARAN-RESUME.pdf"
+            >
+              <i class="fas fa-download"></i> Download Resume</a
+            >
           </div>
-
-          <div class="item d-flex justify-content-center">
-            <!-- Project 2 Card Starts -->
-            <div class="card border-2 border-black project-card h-100">
-              <img
-                src="assets/images/heroverse.png"
-                class="card-img-top card-img-fixed"
-                alt="HeroVerse"
-              />
-              <div class="card-body text-center border-top border-black">
-                <h5 class="card-title">Hero★Verse</h5>
-                <h6 class="card-subtitle f-12">
-                  Fan-page Showcasing Superhero Character Profiles
-                </h6>
-                <span class="badge bg-default my-3 rounded-pill py-2 px-3"
-                  >Personal</span
+          <!-- Hero Content Desktop -->
+          <div
+            class="w-1/2 text-center text-lg-start container d-none d-lg-block mb-4 mt-4 mt-lg-0 animate__animated animate__fadeInLeft"
+          >
+            <h1 class="display-5 fw-semibold mb-3 text-dark font-satisfy">
+              Hi, I'm Jegathiswaran
+            </h1>
+            <span class="badge bg-default mb-3 p-2 font-oswald"
+              >Front-End Developer</span
+            >
+            <p class="lead mb-4 text-dark font-monserrat">
+              An aspiring and motivated front-end web developer passionate about
+              building user-friendly websites and solving real-world problems.
+            </p>
+            <div class="d-flex flex-column">
+              <div
+                class="btn-group align-self-center align-self-lg-start"
+                role="group"
+                aria-label="Social Links"
+              >
+                <a
+                  class="btn btn-info btn-sm border-2 border-black text-decoration-none fw-semibold px-3 font-oswald"
+                  href="https://www.linkedin.com/in/jegathiswaran-thiaghu/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Go to LinkedIn"
                 >
-                <p class="card-text f-12">
-                 A fan-made platform showcasing Marvel and DC superheroes with detailed bios, universe-based filtering, and dynamic search.
-                </p>
-
+                  <i class="fab fa-linkedin"></i>
+                  LinkedIn
+                </a>
+                <a
+                  class="btn btn-info btn-sm border-2 border-black text-decoration-none fw-semibold px-3 font-oswald"
+                  href="https://github.com/jega1312/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Go to GitHub"
+                >
+                  <i class="fab fa-github"></i>
+                  GitHub
+                </a>
+              </div>
+            </div>
+            <a
+              href="assets/documents/JEGATHISWARAN-RESUME.pdf"
+              class="btn btn-primary text-white border-2 border-black fw-medium rounded-1 mt-3 px-4 font-oswald"
+              role="button"
+              download="JEGATHISWARAN-RESUME.pdf"
+            >
+              <i class="fas fa-download"></i> Download Resume</a
+            >
+          </div>
+          <!-- Profile Image Mobile -->
+          <div
+            class="w-1/2 mt-lg-0 container d-lg-none animate__animated animate__fadeInUp"
+          >
+            <img
+              src="assets/images/profile.jpg"
+              alt="Profile Image"
+              class="img img-fluid rounded-circle shadow-lg w-50 mx-auto d-block"
+            />
+          </div>
+          <!-- Profile Image Desktop -->
+          <div
+            class="w-1/2 mt-lg-0 container d-none d-lg-block animate__animated animate__fadeInRight"
+          >
+            <img
+              src="assets/images/profile.jpg"
+              alt="Profile Image"
+              class="img img-fluid rounded-circle shadow-lg w-75 mx-auto d-block"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Hero Section Ends -->
+      <!-- Skills Section Starts -->
+      <section
+        class="bg-white container-fluid py-5 flex justify-content-center align-items-center animate-on-scroll"
+        id="skills"
+      >
+        <!-- Section Header -->
+        <h1
+          class="text-center font-satisfy my-4 display-4 animate__animated animate__fadeInUp"
+        >
+          Skills
+        </h1>
+        <!-- Skills Container Starts -->
+        <div class="container-fluid px-5">
+          <!-- Tabs Navigation Starts -->
+          <ul
+            class="nav nav-underline justify-content-center font-oswald"
+            role="tablist"
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                data-bs-toggle="tab"
+                href="#nav-frontend"
+                role="tab"
+                aria-selected="true"
+              >
+                Frontend
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="tab"
+                href="#nav-framework"
+                role="tab"
+              >
+                Frameworks
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="tab"
+                href="#nav-library"
+                role="tab"
+              >
+                Library
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="tab"
+                href="#nav-cms"
+                role="tab"
+              >
+                CMS
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-bs-toggle="tab"
+                href="#nav-tools"
+                role="tab"
+              >
+                Tools
+              </a>
+            </li>
+          </ul>
+          <!-- Tabs Navigation Ends -->
+          <!-- Tabs Start -->
+          <div class="tab-content" id="nav-tabContent">
+            <!-- Frontend Tab Content Starts -->
+            <div
+              class="tab-pane fade show active py-5"
+              id="nav-frontend"
+              role="tabpanel"
+              aria-labelledby="nav-frontend-tab"
+            >
+              <div
+                class="row g-4 d-flex justify-content-center align-items-center"
+              >
+                <!-- HTML Card -->
                 <div
-                  class="d-flex flex-wrap flex-row justify-content-center gap-2 my-3"
+                  class="col-12 col-sm-7 col-md-4 col-lg-3 col-xxl-2 animate__animated animate__fadeInUp"
                 >
-                  <!-- HTML Logo -->
-                  <img
-                    src="assets/images/html.png"
-                    alt="html"
-                    class="project-tools"
-                  />
-
-                  <!-- Tailwind CSS Logo -->
-                  <img
-                    src="assets/images/tailwind.png"
-                    alt="css"
-                    class="project-tools"
-                  />
-
-                  <!-- JS Logo -->
-                  <img
-                    src="assets/images/js.png"
-                    alt="js"
-                    class="project-tools"
-                  />
-                </div>
-                <div class="d-flex flex-column">
                   <div
-                    class="btn-group align-self-center"
-                    role="group"
-                    aria-label="Social Links"
+                    class="card card-move bg-default p-4 rounded-4 border-3 border-black text-center shadow-lg h-100 mx-auto"
                   >
-                    <a
-                      class="btn btn-primary btn-sm text-decoration-none fw-semibold"
-                      href="https://jega1312.github.io/HeroVerse/"
-                      target="_blank"
-                      rel="noopener"
-                      aria-label="Go to Site"
-                    >
-                      <i class="fas fa-globe"></i>
-                      Visit Site
-                    </a>
-
-                    <a
-                      class="btn btn-primary btn-sm text-decoration-none fw-semibold"
-                      href="https://github.com/jega1312/heroverse"
-                      target="_blank"
-                      rel="noopener"
-                      aria-label="Go to GitHub"
-                    >
-                      <i class="fab fa-github"></i>
-                      GitHub
-                    </a>
+                    <div class="card-body">
+                      <h5
+                        class="card-title text-center text-white fw-semibold font-oswald"
+                      >
+                        HTML
+                      </h5>
+                    </div>
+                    <img
+                      src="assets/images/html.png"
+                      class="card-img-bottom mx-auto skills-logo"
+                      alt="html logo"
+                    />
+                  </div>
+                </div>
+                <!-- CSS Card -->
+                <div
+                  class="col-12 col-sm-7 col-md-4 col-lg-3 col-xxl-2 animate__animated animate__fadeInUp"
+                >
+                  <div
+                    class="card card-move bg-default p-4 rounded-4 border-3 border-black text-center shadow-lg h-100 mx-auto"
+                  >
+                    <div class="card-body">
+                      <h5
+                        class="card-title text-center text-white fw-semibold font-oswald"
+                      >
+                        CSS
+                      </h5>
+                    </div>
+                    <img
+                      src="assets/images/css.png"
+                      class="card-img-bottom mx-auto skills-logo"
+                      alt="css logo"
+                    />
+                  </div>
+                </div>
+                <!-- JS Card -->
+                <div
+                  class="col-12 col-sm-7 col-md-4 col-lg-3 col-xxl-2 animate__animated animate__fadeInUp"
+                >
+                  <div
+                    class="card card-move bg-default p-4 rounded-4 border-3 border-black text-center shadow-lg h-100 mx-auto position-relative"
+                  >
+                    <div class="card-body">
+                      <h5
+                        class="card-title text-center text-white fw-semibold font-oswald"
+                      >
+                        JavaScript
+                      </h5>
+                    </div>
+                    <img
+                      src="assets/images/js.png"
+                      class="card-img-bottom mx-auto skills-logo"
+                      alt="js logo"
+                    />
                   </div>
                 </div>
               </div>
             </div>
-            <!-- Project 2 Card Ends -->
+            <!-- Frontend Tab Content Ends -->
+            <!-- Frameworks Tab Content Starts -->
+            <div
+              class="tab-pane fade py-5"
+              id="nav-framework"
+              role="tabpanel"
+              aria-labelledby="nav-framework-tab"
+            >
+              <div
+                class="row g-4 d-flex justify-content-center align-items-center"
+              >
+                <!-- Tailwind CSS Card -->
+                <div
+                  class="col-12 col-sm-7 col-md-4 col-lg-3 col-xxl-2 animate__animated animate__fadeInUp"
+                >
+                  <div
+                    class="card card-move bg-default p-4 rounded-4 border-3 border-black text-center shadow-lg h-100 mx-auto"
+                  >
+                    <div class="card-body">
+                      <h5
+                        class="card-title text-center text-white fw-semibold text-nowrap font-oswald"
+                      >
+                        Tailwind CSS
+                      </h5>
+                    </div>
+                    <img
+                      src="assets/images/tailwind.png"
+                      class="card-img-bottom mx-auto skills-logo"
+                      alt="tailwind logo"
+                    />
+                  </div>
+                </div>
+                <!-- Bootstrap Card -->
+                <div
+                  class="col-12 col-sm-7 col-md-4 col-lg-3 col-xxl-2 animate__animated animate__fadeInUp"
+                >
+                  <div
+                    class="card card-move bg-default p-4 rounded-4 border-3 border-black text-center shadow-lg h-100 mx-auto"
+                  >
+                    <div class="card-body">
+                      <h5
+                        class="card-title text-center text-white fw-semibold text-nowrap font-oswald"
+                      >
+                        Bootstrap
+                      </h5>
+                    </div>
+                    <img
+                      src="assets/images/bootstrap.svg"
+                      class="card-img-bottom mx-auto skills-logo"
+                      alt="bootstrap logo"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Frameworks Tab Content Ends -->
+            <!-- Library Tab Content Starts -->
+            <div
+              class="tab-pane fade py-5"
+              id="nav-library"
+              role="tabpanel"
+              aria-labelledby="nav-library-tab"
+            >
+              <div
+                class="row g-4 d-flex justify-content-center align-items-center"
+              >
+                <!-- React Card -->
+                <div
+                  class="col-12 col-sm-7 col-md-4 col-lg-3 col-xxl-2 animate__animated animate__fadeInUp"
+                >
+                  <div
+                    class="card card-move bg-default p-4 rounded-4 border-3 border-black text-center shadow-lg h-100 mx-auto"
+                  >
+                    <div class="card-body">
+                      <h5
+                        class="card-title text-center text-white fw-semibold font-oswald"
+                      >
+                        React.js
+                      </h5>
+                    </div>
+                    <img
+                      src="assets/images/react.png"
+                      class="card-img-bottom mx-auto skills-logo"
+                      alt="react logo"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Library Tab Content Ends -->
+            <!-- CMS Tab Content Starts -->
+            <div
+              class="tab-pane fade py-5"
+              id="nav-cms"
+              role="tabpanel"
+              aria-labelledby="nav-cms-tab"
+            >
+              <div
+                class="row g-4 d-flex justify-content-center align-items-center"
+              >
+                <div
+                  class="col-12 col-sm-7 col-md-4 col-lg-3 col-xxl-2 animate__animated animate__fadeInUp"
+                >
+                  <div
+                    class="card card-move bg-default p-4 rounded-4 border-3 border-black text-center shadow-lg h-100 mx-auto"
+                  >
+                    <div class="card-body">
+                      <h5
+                        class="card-title text-center text-white text-nowrap fw-semibold font-oswald"
+                      >
+                        WordPress
+                      </h5>
+                    </div>
+                    <img
+                      src="assets/images/wordpress.png"
+                      class="card-img-bottom mx-auto skills-logo"
+                      alt="wordpress logo"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- CMS Tab Content Ends -->
+            <!-- Tools Tab Content Starts -->
+            <div
+              class="tab-pane fade py-5"
+              id="nav-tools"
+              role="tabpanel"
+              aria-labelledby="nav-tools-tab"
+            >
+              <div
+                class="row g-4 d-flex justify-content-center align-items-center"
+              >
+                <!-- Git Card -->
+                <div
+                  class="col-12 col-sm-7 col-md-4 col-lg-3 col-xxl-2 animate__animated animate__fadeInUp"
+                >
+                  <div
+                    class="card card-move bg-default p-4 rounded-4 border-3 border-black text-center shadow-lg h-100 mx-auto"
+                  >
+                    <div class="card-body">
+                      <h5
+                        class="card-title text-center text-white text-nowrap fw-semibold font-oswald"
+                      >
+                        Git
+                      </h5>
+                    </div>
+                    <img
+                      src="assets/images/git.svg"
+                      class="card-img-bottom mx-auto skills-logo"
+                      alt="git logo"
+                    />
+                  </div>
+                </div>
+                <!-- GitHub Card -->
+                <div
+                  class="col-12 col-sm-7 col-md-4 col-lg-3 col-xxl-2 animate__animated animate__fadeInUp"
+                >
+                  <div
+                    class="card card-move bg-default p-4 rounded-4 border-3 border-black text-center shadow-lg h-100 mx-auto"
+                  >
+                    <div class="card-body">
+                      <h5 class="card-title text-center text-white fw-semibold">
+                        GitHub
+                      </h5>
+                    </div>
+                    <img
+                      src="assets/images/github.png"
+                      class="card-img-bottom mx-auto skills-logo"
+                      alt="github logo"
+                    />
+                  </div>
+                </div>
+                <!-- ClickUp Card -->
+                <div
+                  class="col-12 col-sm-7 col-md-4 col-lg-3 col-xxl-2 animate__animated animate__fadeInUp"
+                >
+                  <div
+                    class="card card-move bg-default p-4 rounded-4 border-3 border-black text-center shadow-lg h-100 mx-auto"
+                  >
+                    <div class="card-body">
+                      <h5 class="card-title text-center text-white fw-semibold">
+                        ClickUp
+                      </h5>
+                    </div>
+                    <img
+                      src="assets/images/clickup.png"
+                      class="card-img-bottom mx-auto skills-logo"
+                      alt="clickup logo"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Tools Tab Content Ends -->
+          </div>
+          <!-- Tabs End -->
+        </div>
+        <!-- Skills Container Ends -->
+      </section>
+      <!-- Skills Section Ends -->
+      <!-- Projects Section Starts -->
+      <section
+        class="bg-default container-fluid py-5 flex justify-content-center align-items-center animate-on-scroll"
+        id="projects"
+      >
+        <!-- Section Header -->
+        <h1
+          class="text-center font-satisfy my-4 display-4 text-white animate__animated animate__fadeInUp"
+        >
+          Projects
+        </h1>
+        <div class="container-fluid px-3">
+          <div id="slider-1" class="owl-carousel position-relative">
+            <div class="item d-flex justify-content-center">
+              <!-- Project 1 Card Starts -->
+              <div
+                class="card border-2 border-black project-card h-100 shadow-lg"
+              >
+                <img
+                  src="assets/images/glucopredictor.png"
+                  class="card-img-top card-img-fixed"
+                  alt="GlucoPredictor"
+                />
+                <div class="card-body text-center border-top border-black">
+                  <h5 class="card-title font-oswald fw-semibold">
+                    GlucoPredictor
+                  </h5>
+                  <h6 class="card-subtitle f-12 font-monserrat">
+                    Web-based Diabetes Risk Assessment & Data Entry System
+                  </h6>
+                  <span
+                    class="badge bg-default my-3 rounded-pill py-2 px-3 font-oswald"
+                    >Final Year Project</span
+                  >
+                  <p class="card-text f-12 font-monserrat">
+                    Rule-based and AI-driven personalized health tips generated
+                    using a trained XGBoost model based on user risk assessment.
+                  </p>
+                  <div
+                    class="d-flex flex-wrap flex-row justify-content-center gap-2 my-3"
+                  >
+                    <!-- HTML Logo -->
+                    <img
+                      src="assets/images/html.png"
+                      alt="html"
+                      class="project-tools"
+                    />
+                    <!-- CSS Logo -->
+                    <img
+                      src="assets/images/css.png"
+                      alt="css"
+                      class="project-tools"
+                    />
+                    <!-- JS Logo -->
+                    <img
+                      src="assets/images/js.png"
+                      alt="js"
+                      class="project-tools"
+                    />
+                    <!-- Bootstrap Logo -->
+                    <img
+                      src="assets/images/bootstrap.svg"
+                      alt="bootstrap"
+                      class="project-tools"
+                    />
+                    <!-- PHP Logo -->
+                    <img
+                      src="assets/images/php.png"
+                      alt="php"
+                      class="project-tools"
+                    />
+                    <!-- Python Logo -->
+                    <img
+                      src="assets/images/python.png"
+                      alt="python"
+                      class="project-tools"
+                    />
+                  </div>
+                  <a
+                    class="btn btn-primary border-2 border-black btn-sm text-decoration-none fw-semibold font-oswald"
+                    href="https://github.com/jega1312/glucopredictor"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Go to GitHub"
+                  >
+                    <i class="fab fa-github"></i>
+                    GitHub
+                  </a>
+                </div>
+              </div>
+              <!-- Project 1 Card Ends -->
+            </div>
+            <div class="item d-flex justify-content-center">
+              <!-- Project 2 Card Starts -->
+              <div
+                class="card border-2 border-black project-card h-100 shadow-lg"
+              >
+                <img
+                  src="assets/images/heroverse.png"
+                  class="card-img-top card-img-fixed"
+                  alt="HeroVerse"
+                />
+                <div class="card-body text-center border-top border-black">
+                  <h5 class="card-title font-oswald fw-semibold">Hero★Verse</h5>
+                  <h6 class="card-subtitle f-12 font-monserrat">
+                    Fan-page Showcasing Superhero Character Profiles
+                  </h6>
+                  <span
+                    class="badge bg-default my-3 rounded-pill py-2 px-3 font-oswald"
+                    >Personal</span
+                  >
+                  <p class="card-text f-12 font-monserrat">
+                    A fan-made platform showcasing Marvel and DC superheroes
+                    with detailed bios, universe-based filtering, and dynamic
+                    search.
+                  </p>
+                  <div
+                    class="d-flex flex-wrap flex-row justify-content-center gap-2 my-3"
+                  >
+                    <!-- HTML Logo -->
+                    <img
+                      src="assets/images/html.png"
+                      alt="html"
+                      class="project-tools"
+                    />
+                    <!-- Tailwind CSS Logo -->
+                    <img
+                      src="assets/images/tailwind.png"
+                      alt="css"
+                      class="project-tools"
+                    />
+                    <!-- JS Logo -->
+                    <img
+                      src="assets/images/js.png"
+                      alt="js"
+                      class="project-tools"
+                    />
+                  </div>
+                  <div class="d-flex flex-column">
+                    <div
+                      class="btn-group align-self-center"
+                      role="group"
+                      aria-label="Social Links"
+                    >
+                      <a
+                        class="btn btn-primary border-2 border-black btn-sm text-decoration-none fw-semibold font-oswald"
+                        href="https://jega1312.github.io/HeroVerse/"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="Go to Site"
+                      >
+                        <i class="fas fa-globe"></i>
+                        Visit Site
+                      </a>
+                      <a
+                        class="btn btn-primary btn-sm border-2 border-black text-decoration-none fw-semibold font-oswald"
+                        href="https://github.com/jega1312/heroverse"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="Go to GitHub"
+                      >
+                        <i class="fab fa-github"></i>
+                        GitHub
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Project 2 Card Ends -->
+            </div>
           </div>
         </div>
+      </section>
+      <!-- Projects Section Ends -->
+      <!-- Experience Section Starts -->
+      <section
+        class="bg-white container-fluid py-5 flex justify-content-center align-items-center animate-on-scroll"
+        id="experience"
+      >
+        <!-- Section Header -->
+        <h1
+          class="text-center font-satisfy my-4 display-4 animate__animated animate__fadeInUp"
+        >
+          Experience
+        </h1>
+        <div class="container d-flex justify-content-center align-items-center">
+          <!-- Experience Card Starts -->
+          <div
+            class="card card-move mb-3 shadow-lg border-2 border-black"
+            style="max-width: 55rem"
+          >
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="assets/images/ds.jpg"
+                  class="img-fluid h-100 object-fit-cover rounded-sm"
+                  alt="ds image"
+                />
+              </div>
+              <div class="col-md-8">
+                <div
+                  class="card-body text-center text-md-start d-flex flex-column align-items-center align-items-md-start gap-2"
+                >
+                  <h5 class="card-title font-oswald fw-semibold">
+                    Front-End Developer
+                  </h5>
+                  <h6 class="mb-2 font-oswald fw-medium">
+                    Digital Symphony
+                    <span
+                      ><img
+                        src="assets/images/ds-logo.png"
+                        alt="ds logo"
+                        class="ds-logo"
+                    /></span>
+                  </h6>
+                  <span class="badge bg-default font-oswald">Internship</span>
+                  <ul class="card-text">
+                    <li class="font-monserrat">
+                      Built responsive microsites with Tailwind CSS
+                    </li>
+                    <li class="font-monserrat">
+                      Developed scalable multi-page sites using reusable
+                      Tailwind CSS layouts
+                    </li>
+                    <li class="font-monserrat">
+                      Created a React.js microsite with component-based
+                      architecture
+                    </li>
+                    <li class="font-monserrat">
+                      Designed an admin dashboard using Bootstrap
+                    </li>
+                    <li class="font-monserrat">
+                      Built a WordPress site with Elementor and custom CSS/JS
+                      via WPCode
+                    </li>
+                    <li class="font-monserrat">
+                      Leveraged ClickUp, Jira, FileZilla, and Slack for task
+                      management and team collaboration
+                    </li>
+                  </ul>
+                  <p class="card-text">
+                    <small class="text-body-emphasis font-oswald"
+                      >September 2025 - December 2025</small
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Experience Card Ends -->
+        </div>
+      </section>
+      <!-- Experience Section Ends -->
+      <!-- Education Section Starts -->
+      <section
+        class="bg-secondary-subtle container-fluid py-5 animate-on-scroll"
+        id="education"
+      >
+        <!-- Section Header -->
+        <h1
+          class="text-center font-satisfy my-4 display-4 animate__animated animate__fadeInUp"
+        >
+          Education
+        </h1>
+        <div
+          class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 px-3 px-md-5 d-flex justify-content-center align-items-stretch"
+        >
+          <!-- Education Card 1 Starts -->
+          <div class="col">
+            <div
+              class="card card-move bg-default border-2 border-black py-3 shadow-lg h-100"
+            >
+              <img
+                src="assets/images/education.png"
+                class="card-img-top education-icon mt-2"
+                alt="education icon"
+              />
+              <div class="card-body text-white text-center">
+                <h6 class="card-title font-oswald fw-semibold">
+                  Bachelor in Information Technology (Hons)
+                </h6>
+              </div>
+              <ul class="list-group list-group-flush text-center border-0">
+                <li
+                  class="list-group-item bg-default text-white border-0 font-monserrat"
+                >
+                  City University
+                </li>
+                <li
+                  class="list-group-item bg-default text-white border-0 font-monserrat"
+                >
+                  Start Date: September 2022
+                </li>
+                <li
+                  class="list-group-item bg-default text-white border-0 font-monserrat"
+                >
+                  Expected Graduation Date: September 2026
+                </li>
+                <li
+                  class="list-group-item bg-default text-white border-0 font-monserrat"
+                >
+                  CGPA: 3.87
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Education Card 1 Ends -->
+          <!-- Education Card 2 Starts -->
+          <div class="col">
+            <div
+              class="card card-move bg-default border-2 border-black py-3 shadow-lg h-100"
+            >
+              <img
+                src="assets/images/education.png"
+                class="card-img-top education-icon mt-2"
+                alt="education icon"
+              />
+              <div class="card-body text-white text-center flex-grow-0">
+                <h6 class="card-title font-oswald fw-semibold">
+                  Foundation in Information Technology
+                </h6>
+              </div>
+              <ul class="list-group list-group-flush text-center border-0">
+                <li
+                  class="list-group-item bg-default text-white border-0 font-monserrat"
+                >
+                  City University
+                </li>
+                <li
+                  class="list-group-item bg-default text-white border-0 font-monserrat"
+                >
+                  Start Date: September 2021
+                </li>
+                <li
+                  class="list-group-item bg-default text-white border-0 font-monserrat"
+                >
+                  Completion Date: September 2022
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Education Card 2 Ends -->
+        </div>
+      </section>
+      <!-- Education Section Ends -->
+      <!-- Contact Us Section Starts -->
+      <section
+        class="bg-white container-fluid py-5 animate-on-scroll"
+        id="contact"
+      >
+        <!-- Section Header -->
+        <h1
+          class="text-center font-satisfy my-4 display-4 animate__animated animate__fadeInUp"
+        >
+          Get in Touch
+        </h1>
+        <div class="container d-flex justify-content-center align-items-center">
+          <form
+            style="width: 50rem"
+            id="contactForm"
+            name="submit-to-google-sheet"
+          >
+            <div id="alertContainer"></div>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control border-2 border-black font-oswald"
+                id="name"
+                name="Name"
+                placeholder="Enter Your Name"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control border-2 border-black font-oswald"
+                id="email"
+                name="Email"
+                aria-describedby="emailHelp"
+                placeholder="Enter Your Email Address"
+              />
+            </div>
+            <div class="mb-3">
+              <textarea
+                class="form-control border-2 border-black font-oswald"
+                id="message"
+                name="Message"
+                rows="8"
+                placeholder="Enter Your Message Here"
+              ></textarea>
+            </div>
+            <div class="d-flex justify-content-center">
+              <button
+                type="submit"
+                class="btn btn-primary border-2 border-black px-4 font-oswald fw-medium"
+              >
+                Send
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- Contact Us Section Ends -->
+    </div>
+
+    <a
+      href="https://wa.me/60172297250?text=Hi%20Jegathiswaran,%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect."
+      class="position-fixed bottom-0 end-0 mb-md-6 margin-3 me-4 z-3 text-decoration-none"
+    >
+      <button
+        class="btn bg-default text-success fw-bold d-flex align-items-center gap-2 shadow-lg rounded-5 py-2 px-3 animate-custom-pulse border-2 border-black"
+        type="button"
+      >
+        <span class="lh-sm font-oswald text-white text-start">
+          Contact <br />
+          Now!
+        </span>
+
+        <span
+          class="position-relative sticky-icon-bg d-flex align-items-center justify-content-center ms-1"
+        >
+          <img
+            src="assets/images/whatsapp.svg"
+            alt="whatsapp icon"
+            width="25"
+            height="25"
+          />
+        </span>
+      </button>
+    </a>
+
+    <!-- Footer Section Starts -->
+    <footer class="navbar navbar-expand-lg bg-default py-4 px-3 px-lg-5">
+      <div
+        class="container-fluid gap-3 gap-lg-0 d-flex flex-column flex-lg-row"
+      >
+        <div class="row">
+          <div
+            class="col text-white d-flex flex-column align-items-center align-items-lg-start gap-lg-1 gap-0"
+          >
+            <span>
+              <i class="fa-solid fa-envelope me-2"></i>
+              <a
+                href="mailto:jegathiaghu@gmail.com?subject=Portfolio%20Inquiry&body=Hello%20Jegathiswaran,%0D%0A%0D%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20get%20in%20touch%20with%20you."
+                class="footer-link text-decoration-none text-white font-oswald fw-medium"
+              >
+                jegathiaghu@gmail.com
+              </a>
+            </span>
+
+            <span>
+              <i class="fab fa-whatsapp me-2"></i>
+              <a
+                href="https://wa.me/60172297250?text=Hi%20Jegathiswaran,%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect."
+                class="footer-link text-decoration-none text-white font-oswald fw-medium"
+                target="_blank"
+                rel="noopener"
+                aria-label="Chat on WhatsApp"
+              >
+                017-229 7250
+              </a>
+            </span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col text-white font-satisfy fs-5">
+            <i class="fa-regular fa-copyright"></i>
+            <span id="year"></span> Jegathiswaran Thiagu
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col text-white">
+            <a
+              class="text-white fs-3 text-decoration-none"
+              href="https://www.linkedin.com/in/jegathiswaran-thiaghu/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Go to LinkedIn"
+            >
+              <i class="fab fa-linkedin footer-social-link"></i>
+            </a>
+
+            <a
+              class="text-white fs-3 text-decoration-none"
+              href="https://github.com/jega1312/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Go to GitHub"
+            >
+              <i class="fab fa-github footer-social-link"></i>
+            </a>
+          </div>
         </div>
       </div>
-    </section>
-    <!-- Projects Section Ends -->
+    </footer>
+    <!-- Footer Section Ends -->
 
     <!-- Bootstrap Script Links -->
     <script
@@ -782,8 +1102,7 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-    <!-- AOS CDN Link -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <!-- Owl Carousel Links -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -798,10 +1117,8 @@
       referrerpolicy="no-referrer"
     ></script>
 
-    <!-- AOS Initialization -->
+    <!-- Owl Carousel Initialization -->
     <script>
-      AOS.init();
-
       $(document).ready(function () {
         $("#slider-1").owlCarousel({
           loop: true,
@@ -817,9 +1134,102 @@
             0: { items: 1, margin: 20 },
             768: { items: 1, margin: 0 },
             1024: { items: 2, margin: 0 },
-            1400: { items: 3 },
+            1400: { items: 3, margin: 0 },
           },
         });
+      });
+
+      // Set current year in footer
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Animate on Scroll Initialization
+      document.addEventListener("DOMContentLoaded", () => {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add(
+                  "animate__animated",
+                  "animate__fadeInUp",
+                );
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          {
+            threshold: 0.3,
+          },
+        );
+
+        document.querySelectorAll(".animate-on-scroll").forEach((el) => {
+          observer.observe(el);
+        });
+      });
+    </script>
+
+    <!-- Bootstrap Alerts Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("contactForm");
+        const alertContainer = document.getElementById("alertContainer");
+
+        form.addEventListener("submit", function (e) {
+          e.preventDefault(); // Prevent form submission
+
+          alertContainer.innerHTML = "";
+
+          const name = document.getElementById("name").value.trim();
+          const email = document.getElementById("email").value.trim();
+          const message = document.getElementById("message").value.trim();
+
+          if (!name || !email || !message) {
+            alertContainer.innerHTML = `
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+          Please fill out all fields before submitting.
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      `;
+            return;
+          }
+
+          const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+          if (!emailPattern.test(email)) {
+            alertContainer.innerHTML = `
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+          Please enter a valid email address.
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      `;
+            return;
+          }
+
+          alertContainer.innerHTML = `
+      <div class="alert alert-success alert-dismissible fade show" role="alert">
+        Thank you, your message has been sent!
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    `;
+
+          form.reset();
+        });
+      });
+    </script>
+
+    <!-- Google Sheet -->
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycby0SQKPiqT07rcocr2hM0jfRLDpbk43UXXbMPoEF7ytGfub8Gz5R_3n0V8fA8tUJ1xL/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then(() => {
+            form.reset();
+          })
+          .catch(() => {
+            alert("Something went wrong!");
+          });
       });
     </script>
   </body>

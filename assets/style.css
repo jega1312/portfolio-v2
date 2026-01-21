@@ -1,24 +1,9 @@
 @font-face {
-  font-family: "Oooh Baby";
-  src: url("../assets/fonts/OoohBaby-Regular.eot");
-  src: url("../assets/fonts/OoohBaby-Regular.eot?#iefix") format("embedded-opentype"),
-    url("../assets/fonts/OoohBaby-Regular.woff2") format("woff2"),
-    url("../assets/fonts/OoohBaby-Regular.woff") format("woff"),
-    url("../assets/fonts/OoohBaby-Regular.ttf") format("truetype"),
-    url("../assets/fonts/OoohBaby-Regular.svg#OoohBaby-Regular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-.font-oh-baby {
-  font-family: "Oooh Baby", cursive;
-}
-
-@font-face {
   font-family: "Satisfy";
   src: url("../assets/fonts/Satisfy-Regular.eot");
-  src: url("../assets/fonts/Satisfy-Regular.eot?#iefix") format("embedded-opentype"),
+  src:
+    url("../assets/fonts/Satisfy-Regular.eot?#iefix")
+      format("embedded-opentype"),
     url("../assets/fonts/Satisfy-Regular.woff2") format("woff2"),
     url("../assets/fonts/Satisfy-Regular.woff") format("woff"),
     url("../assets/fonts/Satisfy-Regular.ttf") format("truetype"),
@@ -32,20 +17,69 @@
   font-family: "Satisfy", cursive;
 }
 
+@font-face {
+  font-family: "Oswald";
+  src: url("../assets/fonts/Oswald-Regular.eot");
+  src:
+    url("../assets/fonts/Oswald-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/Oswald-Regular.woff2") format("woff2"),
+    url("../assets/fonts/Oswald-Regular.woff") format("woff"),
+    url("../assets/fonts/Oswald-Regular.ttf") format("truetype"),
+    url("../assets/fonts/Oswald-Regular.svg#Oswald-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-oswald {
+  font-family: "Oswald", sans-serif;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-Regular.eot");
+  src:
+    url("../assets/fonts/Montserrat-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../assets/fonts/Montserrat-Regular.woff2") format("woff2"),
+    url("../assets/fonts/Montserrat-Regular.woff") format("woff"),
+    url("../assets/fonts/Montserrat-Regular.ttf") format("truetype"),
+    url("../assets/fonts/Montserrat-Regular.svg#Montserrat-Regular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
 .bg-default {
   background-color: #004aad !important;
 }
 
 .hero-section {
-  background-color: #b7d1ff !important;
+  background-color: #d3e3ff !important;
+  margin-top: calc(4rem + 24px);
 }
 
 .badge {
   font-size: 14px !important;
 }
 
+.navbar-fixed-top {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1020;
+}
+
 .navbar-toggler {
   border: none !important;
+  --bs-navbar-toggler-padding-y: 0.25rem;
+  --bs-navbar-toggler-padding-x: 0.5rem;
 }
 
 .navbar-toggler:focus,
@@ -65,9 +99,13 @@
   object-fit: contain;
 }
 
+.card-move {
+  transition: transform 0.3s ease-in-out;
+}
+
 .card-move:hover {
-  cursor: pointer;
-  bottom: 0.5rem;
+  transform: translateY(-0.5rem);
+  cursor: default;
 }
 
 .f-12 {
@@ -80,17 +118,48 @@
   object-fit: contain;
 }
 
-.card-img-fixed{
+.card-img-fixed {
   height: 180px;
   object-fit: fill;
 }
 
-.owl-nav{
-  position: relative;
-  top: 40%;
+.rounded-sm {
+  border-top-left-radius: 0.375rem !important;
+  border-top-right-radius: 0.375rem !important;
+  border-bottom-right-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.ds-logo {
+  height: 24px;
+  width: auto;
+  object-fit: contain;
+  margin-left: 0.1rem;
+}
+
+.education-icon {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+}
+
+.owl-nav {
+  position: absolute;
+  top: 50%;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.owl-nav button {
+  pointer-events: all;
+  color: #fff;
+  border-radius: 50%;
+  padding: 0.5rem 0.7rem;
+  font-size: 1.5rem;
+  border: none;
 }
 
 .owl-nav .owl-prev,
@@ -99,15 +168,184 @@
   font-size: 1.25rem !important;
 }
 
+.owl-dots {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.owl-dot {
+  margin: 0 3px;
+  cursor: pointer;
+}
+
+.owl-dot span {
+  width: 10px;
+  height: 10px;
+  background: #ffffff4b;
+  display: block;
+  border-radius: 50%;
+}
+
+.owl-dot.active span {
+  background: #fff;
+}
+
+.form-control:focus {
+  border-color: #004aad !important;
+}
+
+.footer-social-link {
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer-social-link:hover {
+  transform: scale(1.1);
+}
+
+.footer-link {
+  position: relative;
+  display: inline-block;
+}
+
+.footer-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1.25px;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.footer-link:hover::after {
+  transform: scaleX(1);
+}
+
+.hero-section,
+#skills,
+#projects,
+#experience,
+#education,
+#contact {
+  scroll-margin-top: 95px;
+}
+
+.animate-on-scroll {
+  opacity: 0;
+}
+
+.margin-3 {
+  margin-bottom: 1rem !important;
+}
+
+.sticky-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.sticky-icon:hover {
+  transform: scale(1.1);
+}
+
+.sticky-icon-bg {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  background: #0d9f16;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: relative;
+}
+
+.sticky-icon-bg::after {
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  left: 1px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 10px solid #0d9f16;
+  transform: rotate(-65deg); /* Rotates the triangle */
+}
+
+/* Custom Pulse Animation for button */
+@keyframes custom-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow:
+      0 0 0 0 rgba(255, 255, 255, 0.7),
+      0 0 0 0 rgba(255, 255, 255, 0.5),
+      0 0 0 0 rgba(255, 255, 255, 0.3);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow:
+      0 0 0 10px rgba(255, 255, 255, 0),
+      0 0 0 20px rgba(255, 255, 255, 0),
+      0 0 0 30px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow:
+      0 0 0 30px rgba(255, 255, 255, 0),
+      0 0 0 40px rgba(255, 255, 255, 0),
+      0 0 0 50px rgba(255, 255, 255, 0);
+  }
+}
+.animate-custom-pulse {
+  animation: custom-pulse 1.5s infinite ease-in-out;
+}
+
+.animate-custom-pulse:hover {
+  animation: none;
+  transform: scale(1.05);
+}
 
 @media (min-width: 320px) {
-  .project-card{
+  .project-card {
     width: 16rem !important;
   }
 }
 
 @media (min-width: 768px) {
-  .project-card{
+  .project-card {
     width: 24rem !important;
+  }
+
+  .rounded-sm {
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 0.375rem !important;
+  }
+
+  .owl-nav {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
+
+  .owl-nav .owl-prev,
+  .owl-nav .owl-next {
+    color: #fff !important;
+    font-size: 1.5rem !important;
+  }
+
+  .owl-dots {
+    display: block !important;
+  }
+
+  .mb-md-6 {
+    margin-bottom: 4.5rem !important;
   }
 }
