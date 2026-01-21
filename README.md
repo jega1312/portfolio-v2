@@ -22,7 +22,7 @@ This is the second and enhanced version of my personal portfolio website, built 
 - 🎬 Animate.css  
 - ⭐ Font Awesome  
 - 🏎️ Owl Carousel  
-- 📊 Google App Script (Google Sheet)  
+- 📊 Google Apps Script (Google Sheet)  
 - 📡 GitHub Pages (Hosting)  
 
 ## 📄 License
