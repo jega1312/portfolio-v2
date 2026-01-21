@@ -2,7 +2,9 @@
 
 This is the second and enhanced version of my personal portfolio website, built with modern web technologies. It showcases my projects and skills while making extensive use of **Bootstrap components** such as **cards, buttons, and alerts** to create a responsive, interactive, and visually appealing design.
 
-## 👀 Preview
+🌐 **Live Website:** [View My Portfolio](https://jega1312.github.io/portfolio-v2/)
+
+## 📸 Preview
 ![Portfolio Preview](assets/images/portfolio-preview.png)
 
 ## ✨ Features
