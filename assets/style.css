@@ -352,13 +352,15 @@
   letter-spacing: 0.2rem;
 }
 
-.nav-link {
-  color: rgba(255, 255, 255, 0.6) !important;
+#mainNavbar .nav-link {
+  color: rgba(255,255,255,0.6);
+  transition: color 0.3s;
 }
 
-.nav-link.active {
-  color: #ffffff !important;
+#mainNavbar .nav-link.active {
+  color: #ffffff;
 }
+
 
 
 @media (min-width: 320px) {
