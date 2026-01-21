@@ -55,12 +55,29 @@
   font-family: "Montserrat", sans-serif;
 }
 
+@font-face {
+    font-family: 'Playwrite AU TAS';
+    src: url('../assets/fonts/PlaywriteAUTAS-Regular.eot');
+    src: url('../assets/fonts/PlaywriteAUTAS-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/PlaywriteAUTAS-Regular.woff2') format('woff2'),
+        url('../assets/fonts/PlaywriteAUTAS-Regular.woff') format('woff'),
+        url('../assets/fonts/PlaywriteAUTAS-Regular.ttf') format('truetype'),
+        url('../assets/fonts/PlaywriteAUTAS-Regular.svg#PlaywriteAUTAS-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.font-playwrite {
+    font-family: 'Playwrite AU TAS', sans-serif;
+}
+
 .bg-default {
   background-color: #004aad !important;
 }
 
 .hero-section {
-  background-color: #d3e3ff !important;
+  background-color: rgb(204, 236, 248) !important;
   margin-top: calc(4rem + 24px);
 }
 
@@ -313,6 +330,23 @@
   transform: scale(1.05);
 }
 
+.ls-xs {
+  letter-spacing: 0.05rem;
+}
+
+.ls-sm {
+  letter-spacing: 0.1rem;
+}
+
+.ls-md {
+  letter-spacing: 0.15rem;
+}
+
+.ls-lg {
+  letter-spacing: 0.2rem;
+}
+
+
 @media (min-width: 320px) {
   .project-card {
     width: 16rem !important;
@@ -347,5 +381,11 @@
 
   .mb-md-6 {
     margin-bottom: 4.5rem !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .animate-mobile {
+    animation: fadeInLeft 1s both;
   }
 }
