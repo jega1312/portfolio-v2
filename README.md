@@ -9,10 +9,12 @@ This is the second and enhanced version of my personal portfolio website, built 
 
 ## ✨ Features
 - 📱 Responsive design  
-- 🎨 Interactive portfolio section  
+- 🖥️ Interactive portfolio section  
 - 📝 Contact form integrated with Google Sheets  
+- 💬 Floating WhatsApp button for quick contact  
+- 📧 Email link in the footer for easy communication  
 - 💫 Smooth animations and icons  
-- 🖼️ Carousel for showcasing projects  
+- 🖼️ Carousel for showcasing projects
 
 ## 🛠️ Technologies Used
 - 🌐 HTML, CSS, JavaScript  
