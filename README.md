@@ -30,4 +30,4 @@ MIT License
 
 ---
 
-© 2026 Jegathiswaran Thiagu
+© 2026 Jegathiswaran Thiaghu
