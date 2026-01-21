@@ -1,6 +1,6 @@
 # My Enhanced Personal Portfolio Website 💼
 
-This is the second and enhanced version of my personal portfolio website, built with modern web technologies. It showcases my projects and skills while making extensive use of **Bootstrap components** such as **cards, buttons, tabs, alerts, and forms** to create a responsive, interactive, and visually appealing design.
+This is the second and enhanced version of my personal portfolio website, built with modern web technologies. It showcases my projects and skills while making extensive use of **Bootstrap components** such as **cards, buttons, and alerts** to create a responsive, interactive, and visually appealing design.
 
 🌐 **Live Website:** [View My Portfolio](https://jega1312.github.io/portfolio-v2/)
 
@@ -17,8 +17,8 @@ This is the second and enhanced version of my personal portfolio website, built 
 - 📧 Email link in the footer for easy communication
 
 ## 🛠️ Technologies Used
-- 🌐 HTML5, CSS3, JavaScript  
-- 🅱 Bootstrap 5  
+- 🌐 HTML, CSS, JavaScript  
+- 💠 Bootstrap v5  
 - 🎬 Animate.css  
 - ⭐ Font Awesome 7
 - 🎠 Owl Carousel  
