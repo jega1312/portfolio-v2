@@ -55,10 +55,16 @@
     />
   </head>
 
-  <body>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#mainNavbar"
+    data-bs-offset="200"
+    tabindex="0"
+  >
     <!-- Navbar Section Starts -->
     <nav
       class="navbar navbar-expand-lg navbar-fixed-top bg-default py-4 px-3 px-lg-5"
+      id="mainNavbar"
     >
       <div class="container-fluid">
         <a class="navbar-brand fw-bold fs-3 text-white font-satisfy" href="#"
@@ -76,26 +82,25 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto align-items-lg-center font-oswald ls-xs fw-normal animate-mobile">
+          <ul
+            class="navbar-nav ms-auto align-items-lg-center font-oswald ls-xs fw-normal animate-mobile"
+          >
             <li class="nav-item">
-              <a
-                class="nav-link active text-white"
-                aria-current="page"
-                href="#about"
+              <a class="nav-link active" aria-current="page" href="#about"
                 >About</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#skills">Skills</a>
+              <a class="nav-link" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#projects">Projects</a>
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#experience">Experience</a>
+              <a class="nav-link" href="#experience">Experience</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#education">Education</a>
+              <a class="nav-link" href="#education">Education</a>
             </li>
 
             <!-- Contact Us Button -->
@@ -130,7 +135,8 @@
             <h1 class="display-5 fw-semibold mb-3 text-dark font-satisfy">
               Hi, I'm Jegathiswaran
             </h1>
-            <span class="badge bg-default mb-3 p-2 fs-6 font-oswald ls-xs fw-normal"
+            <span
+              class="badge bg-default mb-3 p-2 fs-6 font-oswald ls-xs fw-normal"
               >Front-End Developer</span
             >
             <p class="lead mb-4 text-dark font-montserrat fs-6">
@@ -181,7 +187,8 @@
             <h1 class="display-5 fw-semibold mb-3 text-dark font-satisfy">
               Hi, I'm Jegathiswaran
             </h1>
-            <span class="badge bg-default mb-3 p-2 fs-6 font-oswald ls-xs fw-normal"
+            <span
+              class="badge bg-default mb-3 p-2 fs-6 font-oswald ls-xs fw-normal"
               >Front-End Developer</span
             >
             <p class="lead mb-4 text-dark font-montserrat fs-6">
@@ -254,11 +261,7 @@
         id="skills"
       >
         <!-- Section Header -->
-        <h1
-          class="text-center font-playwrite my-4 display-6 mb-5"
-        >
-          Skills
-        </h1>
+        <h1 class="text-center font-playwrite my-4 display-6 mb-5">Skills</h1>
         <!-- Skills Container Starts -->
         <div class="container-fluid px-5">
           <!-- Tabs Navigation Starts -->
@@ -504,7 +507,7 @@
                   >
                     <div class="card-body">
                       <h5
-                       class="card-title text-center text-white font-oswald fw-normal ls-xs"
+                        class="card-title text-center text-white font-oswald fw-normal ls-xs"
                       >
                         WordPress
                       </h5>
@@ -539,7 +542,7 @@
                   >
                     <div class="card-body">
                       <h5
-                       class="card-title text-center text-white font-oswald fw-normal ls-xs"
+                        class="card-title text-center text-white font-oswald fw-normal ls-xs"
                       >
                         Git
                       </h5>
@@ -559,7 +562,9 @@
                     class="card card-move bg-default p-4 rounded-4 border-3 border-black text-center shadow-lg h-100 mx-auto"
                   >
                     <div class="card-body">
-                      <h5 class="card-title text-center text-white font-oswald fw-normal ls-xs">
+                      <h5
+                        class="card-title text-center text-white font-oswald fw-normal ls-xs"
+                      >
                         GitHub
                       </h5>
                     </div>
@@ -578,7 +583,9 @@
                     class="card card-move bg-default p-4 rounded-4 border-3 border-black text-center shadow-lg h-100 mx-auto"
                   >
                     <div class="card-body">
-                      <h5 class="card-title text-center text-white font-oswald fw-normal ls-xs">
+                      <h5
+                        class="card-title text-center text-white font-oswald fw-normal ls-xs"
+                      >
                         ClickUp
                       </h5>
                     </div>
@@ -604,9 +611,7 @@
         id="projects"
       >
         <!-- Section Header -->
-        <h1
-          class="text-center font-playwrite my-4 display-6 text-white mb-5"
-        >
+        <h1 class="text-center font-playwrite my-4 display-6 text-white mb-5">
           Projects
         </h1>
         <div class="container-fluid px-3">
@@ -701,9 +706,13 @@
                   alt="HeroVerse"
                 />
                 <div class="card-body text-center border-top border-black">
-                  <h5 class="card-title font-oswald fw-semibold ls-xs">Hero★Verse</h5>
+                  <h5 class="card-title font-oswald fw-semibold ls-xs">
+                    Hero★Verse
+                  </h5>
                   <h6 class="card-subtitle f-12 font-montserrat fw-semibold">
-                    Fan-page Showcasing Superhero Character <br class="d-none d-md-block"> Profiles
+                    Fan-page Showcasing Superhero Character
+                    <br class="d-none d-md-block" />
+                    Profiles
                   </h6>
                   <span
                     class="badge bg-default my-3 rounded-pill py-2 px-3 font-oswald ls-xs fw-normal"
@@ -779,9 +788,7 @@
         id="experience"
       >
         <!-- Section Header -->
-        <h1
-          class="text-center font-playwrite my-4 display-6 mb-5"
-        >
+        <h1 class="text-center font-playwrite my-4 display-6 mb-5">
           Experience
         </h1>
         <div class="container d-flex justify-content-center align-items-center">
@@ -814,7 +821,10 @@
                         class="ds-logo"
                     /></span>
                   </h6>
-                  <span class="badge bg-default mb-3 p-2 font-oswald ls-xs fw-normal">Internship</span>
+                  <span
+                    class="badge bg-default mb-3 p-2 font-oswald ls-xs fw-normal"
+                    >Internship</span
+                  >
                   <ul class="card-text">
                     <li class="font-montserrat">
                       Built responsive microsites with Tailwind CSS
@@ -840,7 +850,8 @@
                     </li>
                   </ul>
                   <p class="card-text">
-                    <small class="text-body-emphasis font-oswald font-semibold ls-xs fs-6"
+                    <small
+                      class="text-body-emphasis font-oswald font-semibold ls-xs fs-6"
                       >September 2025 - December 2025</small
                     >
                   </p>
@@ -858,9 +869,7 @@
         id="education"
       >
         <!-- Section Header -->
-        <h1
-          class="text-center font-playwrite my-4 display-6 mb-5"
-        >
+        <h1 class="text-center font-playwrite my-4 display-6 mb-5">
           Education
         </h1>
         <div
@@ -950,9 +959,7 @@
         id="contact"
       >
         <!-- Section Header -->
-        <h1
-          class="text-center font-playwrite my-4 display-6 mb-5"
-        >
+        <h1 class="text-center font-playwrite my-4 display-6 mb-5">
           Get in Touch
         </h1>
         <div class="container d-flex justify-content-center align-items-center">
