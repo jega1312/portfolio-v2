@@ -18,10 +18,10 @@ This is an enhanced version of my personal portfolio website, built with modern 
 
 ## 🛠️ Technologies Used
 - 🌐 HTML5, CSS3, JavaScript  
-- 🅱 Bootstrap 5  
+- 🅱 Bootstrap 5
+- 🎠 Owl Carousel
 - 🎬 Animate.css  
 - ⭐ Font Awesome 7
-- 🎠 Owl Carousel  
 - 📊 Google Apps Script (Google Sheet Integration)  
 - 🚀 GitHub Pages (Web Hosting)  
 
