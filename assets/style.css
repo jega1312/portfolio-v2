@@ -81,6 +81,13 @@
   margin-top: calc(4rem + 24px);
 }
 
+.btn {
+  --bs-btn-font-family: "Oswald", sans-serif !important;
+  letter-spacing: 0.05rem !important;
+}
+
+
+
 .badge {
   font-size: 14px !important;
 }
